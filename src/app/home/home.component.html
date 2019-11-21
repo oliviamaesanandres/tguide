@@ -1,0 +1,162 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="../../assets/images/homebg.jpg">
+    </header>
+
+    <hr style="border: 4px solid rgb(122, 122, 122);
+    width:10%;  float: left; margin-left: 35%; margin-top: 2%;">
+    <hr style="border: 4px solid rgb(243, 225, 205);
+       width:20%; margin-left: -1.5%; margin-top: 2%;">
+
+    <div class="row">
+
+        <div class="column main">
+            <div class="popPlaces">
+
+
+                <h2 class="pageHeader">Top Visited Places
+                    
+                </h2>
+                <div class="image" style="margin-top: -2%; height:20px;">
+                    <div class="gallery" *ngFor="let place of places" style="display: inline-block; text-align: left; height:20px;">
+                    
+                            <a routerLink="/location" data-lightbox="image-2" data-title="Photography"><img
+                                src="../../assets/slider/{{place.name}}.jpg"></a><br>
+                        Name: <a routerLink="/location" data-lightbox="image-2" data-title="Photography"> 
+                               {{ place.name }}     </a><br>
+                               Location:     <a routerLink="/location" data-lightbox="image-2" data-title="Photography"> 
+                              {{ place.location }}</a> <br>
+                       Nearby Place:         <a routerLink="/location" data-lightbox="image-2" data-title="Photography"> 
+                             
+                                {{ place.nearby }} </a><br>
+                        Price:        <a routerLink="/location" data-lightbox="image-2" data-title="Photography"> 
+                             
+                               {{ place.price }} </a> Php<br>
+                    
+                        <!-- <a routerLink="/location" data-lightbox="image-2" data-title="Photography"><img
+                                src="../../assets/slider/cebu.jpg"></a>
+                        <a routerLink="/location" data-lightbox="image-2" data-title="Photography"><img
+                                src="../../assets/slider/palawan.jpg"></a>
+                        <a routerLink="/location" data-lightbox="image-2" data-title="Photography"><img
+                                src="../../assets/slider/mayon.jpg"></a>
+                        <a routerLink="/location" data-lightbox="image-2" data-title="Photography"><img
+                                src="../../assets/slider/boracay.jpg"></a> -->
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <br>
+           
+            <div class="hotPlaces">
+                <h2>Hot Places</h2>
+                <div class="image" style="margin-top: -2%;">
+                    <div class="places">
+                       
+                        <table>
+                            <td> <a routerLink="/location" data-lightbox="image-2" data-title="Photography"><img
+                                        src="../../assets/slider/cebu.jpg"></a>
+                            </td>
+                            <td>
+                                <article>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        
+                                </article>
+                            </td>
+                        </table>
+                        <table>
+                                <td> <a routerLink="/location" data-lightbox="image-2" data-title="Photography"><img
+                                            src="../../assets/slider/palawan.jpg"></a>
+                                </td>
+                                <td>
+                                    <article>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            
+                                    </article>
+                                </td>
+                            </table>
+                            <table>
+                                    <td> <a routerLink="/location" data-lightbox="image-2" data-title="Photography"><img
+                                                src="../../assets/slider/boracay.jpg"></a>
+                                    </td>
+                                    <td>
+                                        <article>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                
+                                        </article>
+                                    </td>
+                                </table>
+
+                    </div>
+                </div>
+
+            </div>
+         
+            
+            <div>
+                <h2>User Reviews</h2>
+                <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                     
+                </p>
+            </div>
+        </div>
+
+        <div class="column side">
+            <div>
+
+                <h2>Share and Links</h2>
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/CnOedsCmups" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+            <div>
+
+                <h2>Navigate</h2>
+                <ul>
+                     <li> <a routerLink="/home" routerLinkActive="linkActive">Home</a></li>
+                       <li> <a routerLink="/location" routerLinkActive="linkActive">Location</a>
+                       </li><li> <a routerLink="/account" routerLinkActive="linkActive">Account</a>
+                       </li> <li>
+
+                       <a routerLink="/about" routerLinkActive="linkActive">About Us</a>
+                    </li> 
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "30px 10px";
+            document.getElementById("logo").style.fontSize = "25px";
+          } else {
+            document.getElementById("navbar").style.padding = "80px 10px";
+            document.getElementById("logo").style.fontSize = "35px";
+          }
+        }
+        </script>
+
+</body>
+
+</html>
