@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class PlaceService {
 
 
-  private url: string = "http://localhost:8080";
+  private url: string = "";
   private headers = new HttpHeaders().set('Content-Type','application/json');
   //para ma specify yung value ng header ng hhtp req
   //set content type

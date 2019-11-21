@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const urlEncoded = bodyParser.json();
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://oliviamaesanandres:oliviamaesanandres@cluster0-myall.mongodb.net/test?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://via:via@cluster0-jcv3b.mongodb.net/test?retryWrites=true&w=majority',
 {useNewUrlParser: true}).catch(err => console.log(err));
 
 const cors = require('cors');
